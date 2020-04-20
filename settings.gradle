@@ -1,0 +1,3 @@
+rootProject.name='LeoLibsApplication'
+include ':app'
+include ':leolibrary'
