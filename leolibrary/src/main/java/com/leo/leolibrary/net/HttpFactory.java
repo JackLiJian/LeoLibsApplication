@@ -2,8 +2,9 @@ package com.leo.leolibrary.net;
 
 import android.app.Activity;
 import android.content.Context;
-import android.support.annotation.NonNull;
 import android.util.Log;
+
+import androidx.annotation.NonNull;
 
 import com.google.gson.Gson;
 
@@ -77,6 +78,13 @@ public class HttpFactory {
         String postInfoStr = gson.toJson(parameters);
         RequestBody body = RequestBody.create(MediaType.parse("application/json; charset=utf-8"), postInfoStr);
         requestService.post(url, body)
+                .compose(observableTransformer)
+                .subscribe(observer);
+    }
+
+    @SuppressWarnings("unchecked")
+    public void postUrl(final String url, Map<String, Object> parameters, Observer observer) {
+        requestService.postUrl(url, parameters)
                 .compose(observableTransformer)
                 .subscribe(observer);
     }

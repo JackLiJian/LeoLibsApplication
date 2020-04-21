@@ -4,7 +4,6 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.text.TextUtils;
 
-import com.jyh.jyhapplication.utils.SpUtil;
 
 import java.io.File;
 import java.util.HashMap;
@@ -22,15 +21,6 @@ public class NetHelper {
      * BASE_URL:网络请求的BaseUrl
      **/
 //    public static final String BASE_URL = "http://192.168.1.116:8080/jyh/";
-//    public static final String BASE_URL = "http://192.168.1.116:8081/jyh/";
-//    public static final String BASE_URL = "http://192.168.1.116/jyh/";
-//    public static final String BASE_URL = "http://119.29.172.17:8080/jyh/";
-//    public static final String BASE_URL = "http://192.168.1.117:8080/jyh/";
-//    public static final String BASE_URL = "http://192.168.1.108:8099/jyh/";
-//    public static final String BASE_URL = "http://192.168.1.117:8081/jyh/";
-//    public static final String BASE_URL = "http://118.89.151.239/jyh/";
-//    public static final String BASE_URL = "http://192.168.1.116:8081/jyh/";
-//    public static final String BASE_URL = "http://192.168.1.107/jyh/";
 
 //    正式服务器
     public static final String BASE_URL = "http://service.dijiudao.com/jyh/";
@@ -64,7 +54,8 @@ public class NetHelper {
 
         Map<String, Object> headers = new HashMap<>();
         //签处理
-        String tokenInfo = SpUtil.getSharedPreferences(context).getString(SpUtil.TOKEN, "");
+//        String tokenInfo = SpUtil.getSharedPreferences(context).getString(SpUtil.TOKEN, "");
+        String tokenInfo = "";
         if (!TextUtils.isEmpty(tokenInfo)) {
             headers.put("token", tokenInfo);
         }
@@ -95,7 +86,8 @@ public class NetHelper {
         headers.put("Content-Type", "application/json");
 
         //签处理
-        String tokenInfo = SpUtil.getSharedPreferences(context).getString(SpUtil.TOKEN, "");
+//        String tokenInfo = SpUtil.getSharedPreferences(context).getString(SpUtil.TOKEN, "");
+        String tokenInfo = "";
         if (!TextUtils.isEmpty(tokenInfo)) {
             headers.put("token", tokenInfo);
         }
@@ -127,7 +119,8 @@ public class NetHelper {
         headers.put("Content-Type", "application/json");
 
         //签处理
-        String tokenInfo = SpUtil.getSharedPreferences(context).getString(SpUtil.TOKEN, "");
+//        String tokenInfo = SpUtil.getSharedPreferences(context).getString(SpUtil.TOKEN, "");
+        String tokenInfo = "";
         if (!TextUtils.isEmpty(tokenInfo)) {
             headers.put("token", tokenInfo);
         }
