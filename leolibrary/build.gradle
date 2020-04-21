@@ -41,4 +41,22 @@ dependencies {
 
     //时间选择器、省市区三级联动
     api 'com.contrarywind:Android-PickerView:4.1.9'
+
+
+    //图片选择库
+    api 'com.zhihu.android:matisse:0.5.3-beta3'
+
+    api "com.google.code.gson:gson:2.8.2"
+
+    api "org.greenrobot:eventbus:3.1.1"
+
+    //权限申请库
+    api "com.tbruyelle.rxpermissions2:rxpermissions:0.9.4@aar"
+
+    /*网络请求的相关库*/
+    api 'com.squareup.retrofit2:retrofit:2.3.0'
+    api 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    api 'com.squareup.retrofit2:converter-gson:2.3.0'
+    api 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    api 'com.squareup.okhttp3:logging-interceptor:3.9.0'
 }

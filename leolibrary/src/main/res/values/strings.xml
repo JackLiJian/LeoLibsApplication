@@ -1,0 +1,25 @@
+<resources>
+    //错误信息
+    <string name="err_code">验证码错误</string>
+    <string name="err_pwd">密码错误，请重新输入</string>
+
+    //错误提示
+    <string name="no_net">网络连接异常，请检查网络</string>
+    <string name="hint_pwd">密码格式不正确</string>
+    <string name="hint_phone">请输入正确的电话号码</string>
+    <string name="hint_code">请输入6位验证码</string>
+    <string name="hint_account">请输入正确的用户名</string>
+
+    //登录注册
+    <string name="input_phone">请输入手机号码</string>
+    <string name="input_account">请输入用户名</string>
+    <string name="input_code">请输入短信验证码</string>
+    <string name="get_code">获取验证码</string>
+    <string name="input_psd">请输入密码（6-18个字符或数字）</string>
+    <string name="input_new_psd">请设置新密码（6-18个字符或数字）</string>
+    <string name="input_confirm_psd">请再次输入密码（6-18个字符或数字）</string>
+    <string name="input_invitation_code">如有邀请码，请输入邀请码</string>
+    <string name="pwd_rule">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.</string>
+
+
+</resources>
