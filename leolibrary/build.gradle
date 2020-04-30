@@ -71,5 +71,8 @@ dependencies {
 
     api "androidx.viewpager2:viewpager2:1.0.0-alpha01"
 
-    api 'com.lxj:xpopup:1.8.17' //就是androidx版本
+    api 'com.lxj:xpopup:1.8.17'
+
+    //一个可以自由定制外观、支持拖拽消除的MaterialDesign风格Android BadgeView
+    api 'q.rorbin:badgeview:1.1.3'
 }
