@@ -44,17 +44,22 @@
 
         </activity>
         <activity android:name=".activity.ToolBarActivity" >
-
-        </activity>
-        <activity android:name=".activity.XPopupActivity" >
-
-        </activity>
-        <activity android:name=".activity.BadgeViewActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".activity.XPopupActivity" >
+
+        </activity>
+        <activity android:name=".activity.BadgeViewActivity" >
+
+        </activity>
+        <activity android:name=".activity.ORCCameraActivity">
+
+
+
         </activity>
     </application>
 

@@ -44,7 +44,6 @@ import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 /**
- * Created by Administrator on 2017/11/2.
  */
 
 public class HttpFactory {
@@ -58,7 +57,6 @@ public class HttpFactory {
     }
 
     /**
-     * Created on 2017/5/9.
      * 线程调度器
      */
     private ObservableTransformer observableTransformer = new ObservableTransformer() {
