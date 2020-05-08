@@ -3,6 +3,8 @@ package com.leo.leolibsapplication.adapter;
 import android.content.Context;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -31,9 +33,11 @@ public class ImageAdapter extends BannerAdapter<String, ImageAdapter.BannerViewH
     public BannerViewHolder onCreateHolder(ViewGroup parent, int viewType) {
         ImageView imageView = new ImageView(parent.getContext());
         //注意，必须设置为match_parent，这个是viewpager2强制要求的
-        imageView.setLayoutParams(new ViewGroup.LayoutParams(
+        RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(
                 ViewGroup.LayoutParams.MATCH_PARENT,
-                ViewGroup.LayoutParams.MATCH_PARENT));
+                ViewGroup.LayoutParams.MATCH_PARENT);
+        layoutParams.setMargins(20,0,20,0);
+        imageView.setLayoutParams(layoutParams);
         imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
         return new BannerViewHolder(imageView);
     }
