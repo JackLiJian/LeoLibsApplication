@@ -86,5 +86,5 @@ dependencies {
 
     //身份证拍照界面封装
     api 'com.github.wildma:IDCardCamera:1.1.0'
-
+    api 'top.zibin:Luban:1.1.8'
 }
